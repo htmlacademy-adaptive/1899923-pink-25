@@ -26,105 +26,90 @@
     </header>
     <main>
       <section class="contest">
-        <h1 class="page-title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+        <h1 class="contest__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
         <p class="contest__description">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
         <form class="contest__form" action="https://echo.htmlacademy.ru" method="post">
 
-          <fieldset class="fieldset-name">
-            <label class="fieldset-name__item">
-              <span class="fieldset-name__surname">Фамилия:</span>
-              <input class="fieldset-name__input-text" type="text" name="user_surname" placeholder="Укажите фамилию*" required>
+          <fieldset class="contest__name-fieldset">
+            <label class="contest__name-item">
+              <span class="contest__name-surname">Фамилия:</span>
+              <input class="contest__name-input" type="text" name="user_surname" placeholder="Укажите фамилию*" required>
             </label>
-            <label class="fieldset-name__item">
-              <span class="fieldset-name__first-name">Имя:</span>
-              <input class="fieldset-name__input-text" type="text" name="user_firstname" placeholder="Введите ваше имя*" required>
+            <label class="contest__name-item">
+              <span class="contest__name-firstname">Имя:</span>
+              <input class="contest__name-input" type="text" name="user_firstname" placeholder="Введите ваше имя*" required>
             </label>
-            <label class="fieldset-name__item">
-              <span class="fieldset-name__patronimic">Отчество:</span>
-              <input class="fieldset-name__input-text" type="text" name="user_patronimic" placeholder="Ну и отчество тоже">
-            </label>
-          </fieldset>
-
-          <fieldset class="fieldset-achievments">
-            <h2 class="fieldset-title">Ваши безбашенные достижения в путешествии</h2>
-            <label for="checkbox1" class="field-checkbox">
-              <input class="field-checkbox__input" type="checkbox" name="user_achievments" id="checkbox1" checked>
-              <span class="field-checkbox__input-text">Сделал селфи с акулой</span>
-            </label>
-            <label for="checkbox2" class="field-checkbox">
-              <input class="field-checkbox__input" type="checkbox" name="user_achievments" id="checkbox2" checked>
-              <span class="field-checkbox__input-text">Обгорел на пляже</span>
-            </label>
-            <label for="checkbox3" class="field-checkbox">
-              <input class="field-checkbox__input" type="checkbox" name="user_achievments" id="checkbox3">
-              <span class="field-checkbox__input-text">Видел Чака Норриса</span>
-            </label>
-            <label for="checkbox4" class="field-checkbox">
-              <input class="field-checkbox__input" type="checkbox" name="user_achievments" id="checkbox4">
-              <span class="field-checkbox__input-text">Накупил сувениров</span>
-            </label>
-            <label for="checkbox5" class="field-checkbox">
-              <input class="field-checkbox__input" type="checkbox" name="user_achievments" id="checkbox5" checked>
-              <span class="field-checkbox__input-text">Удержал башню</span>
-            </label>
-            <label for="checkbox6" class="field-checkbox">
-              <input class="field-checkbox__input" type="checkbox" name="user_achievments" id="checkbox6">
-              <span class="field-checkbox__input-text">Разгромил отель</span>
+            <label class="contest__name-item">
+              <span class="contest__name-patronimic">Отчество:</span>
+              <input class="contest__name-input" type="text" name="user_patronimic" placeholder="Ну и отчество тоже">
             </label>
           </fieldset>
 
-          <fieldset class="fieldset-contacts">
-            <label class="fieldset-contacts__item">
-              <span class="fieldset-contacts__text">Номер телефона</span>
-              <input class="fieldset-contacts__input-phone" type="tel" name="user_phone" pattern="\+7\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="Номер, пожалуйста">
+          <fieldset class="contest__achievments">
+            <h2 class="contest__achievments-title">Ваши безбашенные достижения в путешествии</h2>
+            <label for="checkbox1" class="contest__achievments-checkbox">
+              <input class="contest__achievments-input" type="checkbox" name="user_achievments" id="checkbox1" checked>
+              <span class="contest__achievments-text">Сделал селфи с акулой</span>
             </label>
-            <label class="fieldset-contacts__item">
-              <span class="fieldset-contacts__text">Адрес почты</span>
-              <input class="fieldset-contacts__input-email" type="email" name="user_email" placeholder="Введите почту*" required>
+            <label for="checkbox2" class="contest__achievments-checkbox">
+              <input class="contest__achievments-input" type="checkbox" name="user_achievments" id="checkbox2" checked>
+              <span class="contest__achievments-text">Обгорел на пляже</span>
+            </label>
+            <label for="checkbox3" class="contest__achievments-checkbox">
+              <input class="contest__achievments-input" type="checkbox" name="user_achievments" id="checkbox3">
+              <span class="contest__achievments-text">Видел Чака Норриса</span>
+            </label>
+            <label for="checkbox4" class="contest__achievments-checkbox">
+              <input class="contest__achievments-input" type="checkbox" name="user_achievments" id="checkbox4">
+              <span class="contest__achievments-text">Накупил сувениров</span>
+            </label>
+            <label for="checkbox5" class="contest__achievments-checkbox">
+              <input class="contest__achievments-input" type="checkbox" name="user_achievments" id="checkbox5" checked>
+              <span class="contest__achievments-text">Удержал башню</span>
+            </label>
+            <label for="checkbox6" class="contest__achievments-checkbox">
+              <input class="contest__achievments-input" type="checkbox" name="user_achievments" id="checkbox6">
+              <span class="contest__achievments-text">Разгромил отель</span>
             </label>
           </fieldset>
 
-          <fieldset class="fieldset-apps">
-            <h2 class="fieldset-apps__title">С каким приложением путешествовали?</h2>
-            <label class="field-radio">
-              <input class="field-radio__input" type="radio" name="user_application" id="radio1" checked>
-              <span class="field-radio__text">Pink для iOS</span>
+          <fieldset class="contest__contacts">
+            <label class="contest__contacts-item">
+              <span class="contest__contacts-text">Номер телефона</span>
+              <input class="contest__contacts-input" type="tel" name="user_phone" pattern="\+7\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="Номер, пожалуйста">
             </label>
-            <label class="field-radio">
-              <input class="field-radio__input" type="radio" name="user_application" id="radio2">
-              <span class="field-radio__text">Pink на Android</span>
-            </label>
-            <label class="field-radio">
-              <input class="field-radio__input" type="radio" name="user_application" id="radio3">
-              <span class="field-radio__text">Windows Phone</span>
+            <label class="contest__contacts-item">
+              <span class="contest__contacts-text">Адрес почты</span>
+              <input class="contest__contacts-input" type="email" name="user_email" placeholder="Введите почту*" required>
             </label>
           </fieldset>
 
-          <fieldset class="fieldset-review">
-            <h2 class="fieldset-review__title">Опишите свои эмоции</h2>
-            <textarea class="fieldset-review__input" name="user_review" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          <fieldset class="contest__apps">
+            <h2 class="contest__apps-title">С каким приложением путешествовали?</h2>
+            <label class="contest__apps-radio">
+              <input class="contest__apps-input" type="radio" name="user_application" id="radio1" checked>
+              <span class="contest__apps-text">Pink для iOS</span>
+            </label>
+            <label class="contest__apps-radio">
+              <input class="contest__apps-input" type="radio" name="user_application" id="radio2">
+              <span class="contest__apps-text">Pink на Android</span>
+            </label>
+            <label class="contest__apps-radio">
+              <input class="contest__apps-input" type="radio" name="user_application" id="radio3">
+              <span class="contest__apps-text">Windows Phone</span>
+            </label>
           </fieldset>
 
-          <div class="contest__submit-button">
-            <button class="button button--submit button--green" type="submit" name="contest_form_submit_button">
+          <fieldset class="contest__review">
+            <h2 class="contest__review-title">Опишите свои эмоции</h2>
+            <textarea class="contest__review-input" name="user_review" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </fieldset>
+
+          <div class="contest__submit">
+            <button class="contest__submit-button" type="submit" name="contest_form_submit_button">
               <span>Отправить форму</span>
             </button>
-            <span class="contest__required-fields">* &mdash; обязательные поля</span>
-          </div>
-
-          <div class="popup popup--error">
-            <h2 class="popup__title">Что-то пошло не так!</h2>
-            <p class="popup__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-            <button class="button button--error button--green" type="button">
-              <span>ОК</span>
-            </button>
-          </div>
-          <div class="popup popup--success">
-            <h2 class="popup__title">Ваша заявка отправлена</h2>
-            <p class="popup__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
-            <button class="button button--success button--green" type="button">
-              <span>Закрыть окно</span>
-            </button>
+            <span class="contest__submit-required">* &mdash; обязательные поля</span>
           </div>
         </form>
       </section>
@@ -160,5 +145,21 @@
         </a>
       </div>
     </footer>
+
+    <div class="popup popup--error">
+      <h2 class="popup__title">Что-то пошло не так!</h2>
+      <p class="popup__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <button class="popup__button" type="button">
+        <span>ОК</span>
+      </button>
+    </div>
+    <div class="popup popup--success">
+      <h2 class="popup__title">Ваша заявка отправлена</h2>
+      <p class="popup__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+      <button class="popup__button" type="button">
+        <span>Закрыть окно</span>
+      </button>
+    </div>
+
   </body>
 </html>
