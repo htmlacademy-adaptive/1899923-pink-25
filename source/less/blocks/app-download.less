@@ -1,0 +1,46 @@
+.app-download {
+  position: relative;
+  background-color: @blue-charcoal;
+
+  &::before {
+    content: "";
+    display: block;
+    height: 462px;
+    background: url(../img/mobile-hand-iphone.png) no-repeat bottom,
+                url(../img/back-mobile.jpg) no-repeat center;
+    background-size: auto cover;
+  }
+
+  &__slogan {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    width: 250px;
+    height: 47px;
+
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 120%;
+
+    color: @white;
+  }
+
+  &__button {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+
+    color: @white;
+  }
+
+  &__description {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+
+    color: @white;
+  }
+}
