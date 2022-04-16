@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Пинк</title>
   </head>
@@ -73,33 +74,39 @@
 
       <section class="reviews">
         <h2 class="visually-hidden">Отзывы о приложении Пинк.</h2>
-        <div class="reviews__wrapper slider">
-          <div class="reviews__list slider__list">
-            <blockquote class="reviews__item slider__item">
-              <h3 class="reviews__title">Николай Петров</h3>
+        <div class="reviews__slider">
+
+          <input class="reviews__slider-input" type="radio" id="button-1" name="slider-toggle">
+          <input class="reviews__slider-input" type="radio" id="button-2" name="slider-toggle">
+          <input class="reviews__slider-input" type="radio" id="button-3" name="slider-toggle">
+
+          <div class="reviews__slider-list">
+            <blockquote class="reviews__slide">
+              <h3 class="reviews__author">Николай Петров</h3>
               <p class="reviews__quote">
                 «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
               </p>
             </blockquote>
-            <blockquote class="reviews__item slider__item">
-              <h3 class="reviews__title">Николай Петров</h3>
+            <blockquote class="reviews__slide">
+              <h3 class="reviews__author">Николай Петров</h3>
               <p class="reviews__quote">
                 «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
               </p>
             </blockquote>
-            <blockquote class="reviews__item slider__item">
-              <h3 class="reviews__title">Николай Петров</h3>
+            <blockquote class="reviews__slide">
+              <h3 class="reviews__author">Николай Петров</h3>
               <p class="reviews__quote">
                 «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
               </p>
             </blockquote>
           </div>
-        </div>
 
-        <div class="reviews__toggles slider__toggles">
-          <button class="slider__toggle slider__toggle--current" type="button">1</button>
-          <button class="slider__toggle" type="button">2</button>
-          <button class="slider__toggle" type="button">3</button>
+          <div class="reviews__slider-toggles">
+            <label class="reviews__slider-toggle" for="button-1"></label>
+            <label class="reviews__slider-toggle" for="button-2"></label>
+            <label class="reviews__slider-toggle" for="button-3"></label>
+          </div>
+
         </div>
       </section>
 
