@@ -1,6 +1,17 @@
 .advantages {
+  background-color: @white-smoke;
+
+  &__intro {
+    padding: 46px 20px 70px;
+    background-color: @white;
+  }
+  &__intro > &__slogan:first-child {
+    margin-bottom: 19px;
+  }
 
   &__slogan {
+    margin: 0;
+
     font-style: normal;
     font-weight: 300;
     font-size: 24px;
@@ -10,30 +21,46 @@
   }
 
   &__content {
-    background-color: @white-smoke;
+    position: relative;
   }
 
   &__content::after {
     content: "";
-    display: block;
-    height: 320px;
+    position: absolute;
+    top: 63%;
+    left: 25%;
+    width: 157px;
+    height: 277px;
+
     background: url("../img/iphone-screen-red.png") no-repeat center;
+    background-position-y: 0;
+  }
+
+  &__list {
+    .list-markers-off;
+    padding: 53px 20px 277px;
+  }
+
+  &__item {
+    margin: 0 0 43px;
   }
 
   &__title {
+    margin: 0 0 24px;
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
-    line-height: 24px;
+    line-height: 14px;
 
     color: @black;
   }
 
   &__description {
+    margin: 0;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 19px;
 
     color: @midnight;
   }
