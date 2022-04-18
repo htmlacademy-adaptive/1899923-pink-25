@@ -1,22 +1,25 @@
 .app-download {
   position: relative;
+  padding: 0 0 0 0;
   background-color: @blue-charcoal;
 
   &::before {
     content: "";
     display: block;
     height: 462px;
+
     background: url(../img/mobile-hand-iphone.png) no-repeat bottom,
                 url(../img/back-mobile.jpg) no-repeat center;
-    background-size: auto cover;
   }
 
   &__slogan {
     position: absolute;
-    top: 20px;
+    top: 95px;
     left: 30px;
     width: 250px;
+
     height: 47px;
+    margin: 0;
 
     font-style: normal;
     font-weight: 300;
@@ -24,6 +27,20 @@
     line-height: 120%;
 
     color: @white;
+  }
+
+  &__list-wrapper {
+    padding: 49px 20px 38px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 204px;
+    margin: 0 38px;
+    padding: 31px 0;
+    .list-markers-off;
   }
 
   &__button {
@@ -36,6 +53,7 @@
   }
 
   &__description {
+    margin: 0;
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
