@@ -58,7 +58,7 @@
             </h2>
         </div>
         <article class="photoblog__post">
-          <picture class="photoblog__post-panorama photoblog__post-panorama--panorama">
+          <picture class="photoblog__post-image photoblog__post-image--panorama">
             <img src="../img/panorama-tablet.jpg" alt="Панорама дня">
           </picture>
           <div class="photoblog__post-content photoblog__post-content--panorama">
@@ -208,7 +208,10 @@
       <section class="upload">
         <div class="upload__title">
           <h2 class="upload__title-text">
-            Затмите их всех! Выкладывайте все, что накопилось в телефоне!
+            Затмите их всех!
+          </h2>
+          <h2 class="upload__title-text">
+            Выкладывайте все, что накопилось в телефоне!
           </h2>
         </div>
         <form class="upload-form" action="https://echo.htmlacademy.ru" method="post">
@@ -220,19 +223,19 @@
             </fieldset>
             <fieldset class="upload-form__filters">
               <label class="upload-form__filter-toggle" for="upload-filter-1">
-                <input type="radio" id="upload-filter-1" name="upload-filter">
+                <input class="upload-form__filter-input" type="radio" id="upload-filter-1" name="upload-filter">
               </label>
               <label class="upload-form__filter-toggle" for="upload-filter-2">
-                <input type="radio" id="upload-filter-2" name="upload-filter">
+                <input class="upload-form__filter-input" type="radio" id="upload-filter-2" name="upload-filter">
               </label>
               <label class="upload-form__filter-toggle" for="upload-filter-3">
-                <input type="radio" id="upload-filter-3" name="upload-filter">
+                <input class="upload-form__filter-input" type="radio" id="upload-filter-3" name="upload-filter">
               </label>
             </fieldset>
-            <fieldset class="range-controls">
-              <input class="range-filter" type="range" id="range-filter-1" name="range-filter-1">
-              <input class="range-filter" type="range" id="range-filter-2" name="range-filter-2">
-              <input class="range-filter" type="range" id="range-filter-3" name="range-filter-3">
+            <fieldset class="upload-form__range-controls">
+              <input class="upload-form__range-filter" type="range" id="range-filter-1" name="range-filter-1">
+              <input class="upload-form__range-filter upload-form__range-filter--2" type="range" id="range-filter-2" name="range-filter-2">
+              <input class="upload-form__range-filter upload-form__range-filter--3" type="range" id="range-filter-3" name="range-filter-3">
             </fieldset>
             <div class="upload-form__buttons">
               <button class="button upload-form__button-submit" type="submit">Запостить</button>
