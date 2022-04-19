@@ -1,5 +1,6 @@
 .upload-form {
   padding: 20px 0 41px 0;
+  margin: 0 0 40px 0;
   background-color: @white-smoke;
 }
 
@@ -60,11 +61,15 @@
   }
 }
 
+.upload-form__range-controls {
+  border-bottom: 1px solid rgb(@midnight, 0.1);
+}
+
 .upload-form__range-filter {
   -webkit-appearance: none;
   width: 240px;
   height: 18px;
-  margin: 0 auto 30px;
+  margin: 0 auto 26px;
 
   border: none;
   background-color: transparent;
@@ -93,16 +98,22 @@
     display: none;
   }
 }
+
 .upload-form__buttons {
-  padding: 38px 20px 41px;
+  padding: 38px 20px 0;
 }
 
 .upload-form__button-submit {
   width: 280px;
+  padding: 15px 87px;
+  margin: 0 0 12px 0;
+  color: @fuchsia;
   .button-defaults-off;
 }
 
 .upload-form__button-cancel {
   width: 280px;
+  padding: 15px 87px;
+  color: rgb(@midnight, 0.1);
   .button-defaults-off;
 }
