@@ -54,14 +54,14 @@
         </div>
         <form class="contest__form" action="https://echo.htmlacademy.ru" method="post">
 
-          <fieldset class="contest__name-fieldset">
+          <fieldset class="contest__name">
             <label class="contest__name-item">
               <span class="contest__name-surname">Фамилия:</span>
-              <input class="contest__name-input" type="text" name="user_surname" placeholder="Укажите фамилию*" required>
+              <input class="contest__name-input" type="text" name="user_surname" placeholder="Укажите фамилию *" required>
             </label>
             <label class="contest__name-item">
               <span class="contest__name-firstname">Имя:</span>
-              <input class="contest__name-input" type="text" name="user_firstname" placeholder="Введите ваше имя*" required>
+              <input class="contest__name-input" type="text" name="user_firstname" placeholder="Введите ваше имя *" required>
             </label>
             <label class="contest__name-item">
               <span class="contest__name-patronimic">Отчество:</span>
@@ -71,28 +71,34 @@
 
           <fieldset class="contest__achievments">
             <h2 class="contest__achievments-title">Ваши безбашенные достижения в путешествии</h2>
-            <label for="checkbox1" class="contest__achievments-checkbox">
-              <input class="contest__achievments-input" type="checkbox" name="user_achievments" id="checkbox1" checked>
+
+            <input class="contest__achievments-input" type="checkbox" name="user_achievments" id="checkbox1" checked>
+            <label class="contest__achievments-checkbox" for="checkbox1">
               <span class="contest__achievments-text">Сделал селфи с акулой</span>
             </label>
-            <label for="checkbox2" class="contest__achievments-checkbox">
-              <input class="contest__achievments-input" type="checkbox" name="user_achievments" id="checkbox2" checked>
+
+            <input class="contest__achievments-input" type="checkbox" name="user_achievments" id="checkbox2" checked>
+            <label class="contest__achievments-checkbox" for="checkbox2">
               <span class="contest__achievments-text">Обгорел на пляже</span>
             </label>
-            <label for="checkbox3" class="contest__achievments-checkbox">
-              <input class="contest__achievments-input" type="checkbox" name="user_achievments" id="checkbox3">
+
+            <input class="contest__achievments-input" type="checkbox" name="user_achievments" id="checkbox3">
+            <label class="contest__achievments-checkbox" for="checkbox3">
               <span class="contest__achievments-text">Видел Чака Норриса</span>
             </label>
-            <label for="checkbox4" class="contest__achievments-checkbox">
-              <input class="contest__achievments-input" type="checkbox" name="user_achievments" id="checkbox4">
+
+            <input class="contest__achievments-input" type="checkbox" name="user_achievments" id="checkbox4">
+            <label class="contest__achievments-checkbox" for="checkbox4">
               <span class="contest__achievments-text">Накупил сувениров</span>
             </label>
-            <label for="checkbox5" class="contest__achievments-checkbox">
-              <input class="contest__achievments-input" type="checkbox" name="user_achievments" id="checkbox5" checked>
+
+            <input class="contest__achievments-input" type="checkbox" name="user_achievments" id="checkbox5" checked>
+            <label class="contest__achievments-checkbox" for="checkbox5">
               <span class="contest__achievments-text">Удержал башню</span>
             </label>
-            <label for="checkbox6" class="contest__achievments-checkbox">
-              <input class="contest__achievments-input" type="checkbox" name="user_achievments" id="checkbox6">
+
+            <input class="contest__achievments-input" type="checkbox" name="user_achievments" id="checkbox6">
+            <label class="contest__achievments-checkbox" for="checkbox6">
               <span class="contest__achievments-text">Разгромил отель</span>
             </label>
           </fieldset>
@@ -104,22 +110,25 @@
             </label>
             <label class="contest__contacts-item">
               <span class="contest__contacts-text">Адрес почты</span>
-              <input class="contest__contacts-input" type="email" name="user_email" placeholder="Введите почту*" required>
+              <input class="contest__contacts-input" type="email" name="user_email" placeholder="Введите почту *" required>
             </label>
           </fieldset>
 
           <fieldset class="contest__apps">
             <h2 class="contest__apps-title">С каким приложением путешествовали?</h2>
-            <label class="contest__apps-radio">
-              <input class="contest__apps-input" type="radio" name="user_application" id="radio1" checked>
+
+            <input class="contest__apps-input" type="radio" name="user_application" id="radio1" checked>
+            <label class="contest__apps-radio" for="radio1">
               <span class="contest__apps-text">Pink для iOS</span>
             </label>
-            <label class="contest__apps-radio">
-              <input class="contest__apps-input" type="radio" name="user_application" id="radio2">
+
+            <input class="contest__apps-input" type="radio" name="user_application" id="radio2">
+            <label class="contest__apps-radio" for="radio2">
               <span class="contest__apps-text">Pink на Android</span>
             </label>
-            <label class="contest__apps-radio">
-              <input class="contest__apps-input" type="radio" name="user_application" id="radio3">
+
+            <input class="contest__apps-input" type="radio" name="user_application" id="radio3">
+            <label class="contest__apps-radio" for="radio3">
               <span class="contest__apps-text">Windows Phone</span>
             </label>
           </fieldset>
@@ -130,10 +139,13 @@
           </fieldset>
 
           <div class="contest__submit">
-            <button class="contest__submit-button" type="submit" name="contest_form_submit_button">
-              <span>Отправить форму</span>
+            <button class="contest__submit-button button-2" type="submit" name="contest_form_submit_button">
+              <span class="contest__submit-text">Отправить форму</span>
             </button>
-            <span class="contest__submit-required">* &mdash; обязательные поля</span>
+            <p class="contest__submit-required">
+              <span class="contest__submit-star">*</span>
+              &nbsp;&mdash;&nbsp;обязательные поля
+            </p>
           </div>
         </form>
       </section>
@@ -174,6 +186,7 @@
         </a>
       </div>
     </footer>
+
     <div class="popup popup--error">
       <h2 class="popup__title">Что-то пошло не так!</h2>
       <p class="popup__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
