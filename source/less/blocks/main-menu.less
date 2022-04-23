@@ -4,16 +4,16 @@
   left: 0;
   display: flex;
   flex-direction: column;
-  width: 320px;
+  min-width: 320px;
 }
 
 .main-menu__list {
-  display: none;
+  display: block;
   position: absolute;
   top: 69px;
   left: 0;
 
-  width: 100%;
+  width: 320px;
   padding: 0;
   margin: 0;
 
@@ -55,3 +55,37 @@
   display: none;
 }
 
+@media (min-width: @tablet-width) {
+  .main-menu,
+  .main-menu__list {
+    min-width: 680px;
+  }
+
+  .main-menu__toggle {
+    top: 27px;
+    right: 15px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-menu {
+    position: relative;
+    display: flex;
+    width: auto;
+  }
+  .main-menu__list {
+    position: relative;
+    display: flex;
+    top: 0;
+    width: auto;
+    background-color: transparent;
+  }
+
+  .main-menu__item {
+    border: none;
+  }
+
+  .main-menu__toggle {
+    display: none;
+  }
+}

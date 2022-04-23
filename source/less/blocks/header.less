@@ -2,20 +2,41 @@
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 10;
+  z-index: 2;
 
-  width: 320px;
+  min-width: 320px;
   height: 69px;
   padding: 21px 20px;
 
   font-family: @font-family;
-
   background-color: rgb(@black, 0.3);
+  outline: 4px solid green;
+  outline-offset: -4px;
+}
 
+.header__logo {
+  position: absolute;
+  display: block;
+}
 
+@media (min-width: @tablet-width) {
+  .header {
+    width: 680px;
+    height: 110px;
+    padding: 27px 20px 47px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    height: 110px;
+  }
 
   .header__logo {
-    position: absolute;
+    position: relative;
     display: block;
   }
 }
