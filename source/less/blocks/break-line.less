@@ -1,0 +1,21 @@
+@media (min-width: @tablet-width) {
+  .break-line {
+    &--tablet {
+      display: initial;
+    }
+    &--desktop {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .break-line {
+    &--tablet {
+      display: none;
+    }
+    &--desktop {
+      display: initial;
+    }
+  }
+}
