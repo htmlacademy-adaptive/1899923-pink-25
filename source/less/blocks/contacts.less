@@ -1,5 +1,5 @@
 .contacts {
-  padding: 50px 0 0;
+  padding: 38px 0 0;
 }
 
 .contacts__slogan {
@@ -7,23 +7,23 @@
   font-style: normal;
   font-weight: 300;
   font-size: 24px;
-  line-height: 120%;
+  line-height: 30px;
   color: @midnight;
 }
 .contacts__slogan-wrapper {
-  margin-bottom: 45px;
+  margin-bottom: 35px;
 }
 
 .contacts__wrapper {
-  padding: 0 40px;
+  padding: 0 40px 18px;
 }
 
 .contacts__title {
-  margin: 0 0 9px 0;
+  margin: 0 0 5px 0;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  line-height: 25px;
+  line-height: 20px;
 }
 
 .contacts__info {
@@ -31,19 +31,22 @@
   font-style: normal;
   font-weight: 300;
   font-size: 24px;
-  line-height: 33px;
+  line-height: 30px;
   color: @fuchsia;
 }
 
 .contacts__item {
-  margin: 0 0 31px 0;
+  margin: 0 0 20px 0;
+  &:last-of-type .contacts__title {
+    margin: 24px 0 5px 0;
+  }
 }
 
 .contacts__map-wrapper {
   position: relative;
   width: 320px;
   height: 200px;
-  margin-bottom: 40px;
+  margin: 0 0 38px 0;
   overflow: hidden;
 
   &::after {

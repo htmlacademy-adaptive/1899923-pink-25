@@ -1,0 +1,133 @@
+.effect {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+
+  .effect {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    min-width: @tablet-width;
+    background-color: @white;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 52px;
+      left: 20px;
+      width: 100%;
+      height: 100%;
+      background-image: url(../../img/svg/icon-timer.svg);
+      background-repeat: no-repeat;
+    }
+
+    &::after {
+      position: absolute;
+      content: "24";
+      top: 108px;
+      left: 38px;
+      width: 202px;
+      height: 202px;
+
+      font-style: normal;
+      font-weight: 700;
+      font-size: 96px;
+      line-height: 163px;
+      color: @fuchsia;
+
+      border: 16px solid @fuchsia;
+      border-radius: 50%;
+    }
+  }
+
+  .effect__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 94px 0 28px 0;
+    text-align: start;
+  }
+
+  .effect__title {
+    margin: 0 0 11px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+
+  }
+
+  .effect__description {
+    padding: 0 30px 0 0;
+    margin: 0 0 14px 0;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+  }
+
+  .effect__link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+    color: @fuchsia;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: @desktop-width) {
+
+  .effect {
+    min-width: @desktop-width;
+    background-color: @white-smoke;
+
+    &::before {
+      top: 30px;
+      left: 130px;
+      background-size: 298px 345px;
+    }
+
+    &::after {
+      top: 100px;
+      left: 154px;
+      width: 252px;
+      height: 252px;
+
+      font-size: 120px;
+      line-height: 210px;
+
+      border-width: 18px;
+    }
+  }
+
+  .effect__wrapper {
+    width: 100%;
+    margin: 0;
+    padding: 127px 0 114px 500px;
+    text-align: start;
+  }
+
+  .effect__title {
+    margin: 0 0 25px;
+    font-size: 30px;
+    line-height: 30px;
+
+  }
+
+  .effect__description {
+    padding: 0 0 0 0;
+    margin: 0 0 30px 0;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .effect__link {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
