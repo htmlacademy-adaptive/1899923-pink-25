@@ -1,0 +1,68 @@
+.advantages {
+  background-color: @white-smoke;
+}
+
+.advantages__intro {
+  padding: 46px 20px 70px;
+  background-color: @white;
+}
+.advantages__intro > .advantages__slogan:first-child {
+  margin-bottom: 19px;
+}
+
+.advantages__slogan {
+  margin: 0;
+
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 120%;
+
+  color: @midnight;
+}
+
+.advantages__content {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 63%;
+    left: 25%;
+    width: 157px;
+    height: 277px;
+
+    background: url("../img/iphone-screen-red.png") no-repeat center;
+    background-position-y: 0;
+  }
+}
+
+.advantages__list {
+  margin: 0;
+  padding: 53px 20px 277px;
+  .list-markers-off;
+}
+
+.advantages__item {
+  margin: 0 0 43px;
+}
+
+.advantages__title {
+  margin: 0 0 24px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 14px;
+
+  color: @black;
+}
+
+.advantages__description {
+  margin: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+
+  color: @midnight;
+}

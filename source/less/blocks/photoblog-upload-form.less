@@ -1,0 +1,118 @@
+.upload-form {
+  padding: 20px 0 41px 0;
+  margin: 0 0 40px 0;
+  background-color: @white-smoke;
+}
+
+.upload-form__image-select,
+.upload-form__filters,
+.upload-form__range-controls {
+  .fieldset-defaults-off
+}
+
+.upload__content {
+  outline: none;
+}
+
+.upload__title {
+  padding: 21px 20px 44px;
+}
+
+.upload__title-text {
+  margin: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+
+}
+
+.upload-form__filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 42px 69px 34px 57px;
+}
+
+.upload-form__filter-input {
+  display: none;
+}
+
+.upload-form__filter-toggle {
+  display: block;
+
+  &[for="upload-filter-1"] {
+    width: 44px;
+    height: 44px;
+    background-image: url(../../img/svg/crop.svg);
+  }
+
+  &[for="upload-filter-2"] {
+    width: 48px;
+    height: 43px;
+    background-image: url(../../img/svg/fill.svg);
+  }
+
+  &[for="upload-filter-3"] {
+    width: 32px;
+    height: 32px;
+    background-image: url(../../img/svg/contrast.svg);
+  }
+}
+
+.upload-form__range-controls {
+  border-bottom: 1px solid rgb(@midnight, 0.1);
+}
+
+.upload-form__range-filter {
+  -webkit-appearance: none;
+  width: 240px;
+  height: 18px;
+  margin: 0 auto 26px;
+
+  border: none;
+  background-color: transparent;
+  outline: none;
+
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    box-sizing: content-box;
+    width: 14px;
+    height: 14px;
+    margin-top: -7px;
+
+    border: 2px solid @fuchsia;
+    border-radius: 50%;
+    background-color: @white;
+    cursor: pointer;
+  }
+
+  &::-webkit-slider-runnable-track {
+    height: 2px;
+    background-color: @black;
+  }
+
+  &--2,
+  &--3 {
+    display: none;
+  }
+}
+
+.upload-form__buttons {
+  padding: 38px 20px 0;
+}
+
+.upload-form__button-submit {
+  width: 280px;
+  padding: 15px 87px;
+  margin: 0 0 12px 0;
+  color: @fuchsia;
+  .button-defaults-off;
+}
+
+.upload-form__button-cancel {
+  width: 280px;
+  padding: 15px 87px;
+  color: rgb(@midnight, 0.1);
+  .button-defaults-off;
+}
