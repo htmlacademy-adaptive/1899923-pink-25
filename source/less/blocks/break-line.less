@@ -1,4 +1,17 @@
+@media (max-width: @mobile-width-only) {
+
+  .break-line {
+    &--tablet {
+      display: none;
+    }
+    &--desktop {
+      display: none;
+    }
+  }
+}
+
 @media (min-width: @tablet-width) {
+
   .break-line {
     &--tablet {
       display: initial;
@@ -10,6 +23,7 @@
 }
 
 @media (min-width: @desktop-width) {
+
   .break-line {
     &--tablet {
       display: none;
