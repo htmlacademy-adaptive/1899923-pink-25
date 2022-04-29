@@ -2,6 +2,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
   width: 320px;
 
   font-family: @font-family;
@@ -24,4 +25,18 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
+}
+
+@media (min-width: @tablet-width) {
+
+  .main {
+    min-width: @tablet-width;
+  }
+}
+
+@media (min-width: @desktop-width) {
+
+  .main {
+    min-width: @desktop-width;
+  }
 }
